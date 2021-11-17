@@ -1,0 +1,32 @@
+﻿@model my_first_mvc.Models.Dbmanager.Account
+
+<h2>新增 帳號</h2>
+<br />
+
+<form method="post" action="/HelloWorld/EditAccount">
+    <div class="form-group row">
+        <label for="inputCharName" class="col-sm-2">ID</label>
+        <div class="col-sm-10">
+            <input type="text" id="inputCharName" name="ID" class="form-control" value="@Model.ID" readonly/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputCharName" class="col-sm-2">密碼</label>
+        <div class="col-sm-10">
+            <input type="text" id="inputCharName" name="password" class="form-control" value="@Model.password" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputCardName" class="col-sm-2">名稱</label>
+        <div class="col-sm-10">
+            <input type="text" id="inputCardName" name="name" class="form-control" value="@Model.name"/>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="inputCardLevel" class="col-sm-2">部門</label>
+        <div class="col-sm-10">
+            <input type="text" id="inputCardLevel" name="deptname" class="form-control" value="@Model.deptname" />
+        </div>
+    </div>
+    <input class="btn btn-success" type="submit" value="修改" />
+</form>
